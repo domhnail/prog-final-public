@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROG1700 Cole O'Donnell - Final Project</title>
+  <link href ="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>Choose a country</h2>
+    
+    <select id="country">
+    <option value="filler">Select a Country</option>
+    </select>
+    
+    <br><br>
+  </header>
+  <div class="contentArea">
+    <div class="display">
+      <div id="flagDis" class="flags">
+        
+      </div>
+      <div class="info">
+        <label>Population:</label>
+        <br>
+        <p id="population"></p>
+        <label>Area in:</label><br>
+        <select id="areaRadio">
+          <option value="imperial">square miles</option>
+          <option value="metric">square KM</option>
+        </select>
+        <br>
+        <p id="area"></p>
+      <div class="popDense">
+        <label>Population Density: </label><br>
+          <input id="mileRadio" type="radio" name="populationD" value="perSquareM"/> Per Square Mile <br>
+          <input id="KMRadio" type="radio" name="populationD" value="perSquareKM"/> Per Square KM
+          <p id="popD"></p>
+      </div>
+        <label>Percentage of World Population: </label>
+        <br>
+        <p id="percent"></p>
+        <br>
+      </div>
+    </div>
+  </div>
+<footer>
+  <div class="buttons">
+    <button id="quizLaunch" type="link">Launch Quiz</button>
+    <a id="wikiLink" href=""><button type="button">WikiCountry</button></a>
+  </div>
+</footer>
+</body>
+</html>

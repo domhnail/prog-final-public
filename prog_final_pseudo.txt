@@ -1,0 +1,47 @@
+//check if localStorage is null
+//store XHR object to a variable to request data from the server
+//check that the request is ready to execute
+//check that request is complete and data has been retrieved, then call DisplayCountryData
+//else if data is already in local storage then call DisplayCountryData
+
+function DisplayCountryData() { //function to execute when country is selected
+//parse countries.json, assign to variable allCountries
+//get the country dropdown via id "country"
+//insert all the names of countries via allCountries as new options in id "country", insert name of country as value of option
+//check the country selected from the option value, assign to variable countrySel
+//read the wiki_pages.csv
+//assign to an array
+//insert the correct link to the wiki button by comparing to countrySel
+//get the flag id
+//insert the appropriate flag from allCountries by comparing to countrySel
+//get the population id
+//insert population from allCountries by comparing to countrySel
+//get the area id
+//insert area from allCountries by comparing to countrySel
+//store it to a variable, areaMiles
+//pipe areaMiles to and call CalculateAreaInKM, store to variable areaKM
+//else if the square KM selection is "true", insert areaKM
+}
+
+function CalculateAreaInKM(countryAreaInMiles) { //function to calculate the area in KM
+//multiply countryAreaInMiles by 1.609344, store in variable countryAreaInKM
+//return countryAreaInKM
+}
+
+function DisplayPopulationData() { //function to calculate and return population data
+//parse countries.json, assign to variable allCountries
+//check which country is selected, from 
+//get the popD id
+//get the popDense div
+//check which radio button is selected
+//if per square mile, calculate population density per square mile by dividing population by countryAreaInMiles, store in variable popDensityMiles
+//else if per square KM, calculate population density per square KM by dividing population by countryAreaInKM, store in variable popDensityKM
+//whichever it is, insert the value into popD
+}
+
+function CalculateTotalWorldPopulation() { //function to calculate the percentage of the world population number
+//check country selected
+//assign country population to variable
+//divide country population by world population, multiply by 100
+//return the percentage
+}
