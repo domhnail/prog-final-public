@@ -93,7 +93,7 @@ let flagName = FlagNamer(countrySel); //getting the filename to point to the rig
   currentFlag.innerHTML = `<h2>Flag</h2> 
   <label id="nation">${countrySel}</label>
   <img id="flag" src="/flags/${flagName}.png">`; //insert flag
-  wikiLink.innerHTML = `<a id="wikiLink" href="${WikiButtoner()}"><button type="button">WikiCountry</button></a>` //insert wiki link
+  wikiLink.innerHTML = `<a id="wikiLink" href="${WikiButtoner()}"><button type="button">Wikipedia Entry</button></a>` //insert wiki link
 
   let nationLabel = document.getElementById('nation'); //getting the label for the country
 let nationCheck = nationLabel.innerHTML; //getting the country name from the label

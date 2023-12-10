@@ -5,6 +5,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   header {
@@ -12,6 +15,10 @@ body {
     background-color: #333;
     padding: 20px;
     border-bottom: 2px solid #6688ad;
+  }
+
+  main {
+    flex: 1;
   }
 
   h2 {
@@ -35,6 +42,7 @@ body {
   .contentArea {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
 
   .display {
@@ -90,4 +98,8 @@ body {
 
   button:hover {
     background-color: #7ca6d3;
+  }
+
+  .buttons {
+    margin-top: auto;
   }
